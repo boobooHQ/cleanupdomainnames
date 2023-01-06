@@ -10,11 +10,12 @@ and run with input.txt containing the reveresed domain list with numbers at fron
 
 # read the input from stdin
 while read line; do
-  # remove the leading characters before the first period (.)
-  output=$(echo "$line" | sed 's/^[^.]*//')
+  # remove all the digits that occur before the first period (.)
+  output=$(echo "$line" | sed 's/^[0-9]*//')
   # print the modified line
   echo "$output"
 done
+
 
 To use this script, you can save it to a file (e.g. "cleanup.sh") and then run it like this:
 
