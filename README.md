@@ -11,7 +11,7 @@ It then removes any remaining digits after the period in the same way as before.
 
 gET DIRTY DOMAINS FROM hmmmmm and then use reverseall to reverseit  
 
-./reverseall.sh input.txt 
+./reverseall.sh dirtyinput.txt > input.txt
 
 bash cleanup.sh < input.txt > output.txt
 
