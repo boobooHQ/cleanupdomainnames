@@ -1,0 +1,34 @@
+
+
+Copy code
+
+#!/bin/bash
+
+# read the input from stdin
+while read line; do
+  # remove all the digits that occur before the first period (.)
+  output=$(echo "$line" | sed 's/^[0-9]*//')
+  # print the modified line
+  echo "$output"
+done
+
+
+This script will remove all the digits that occur before the first period in each line, but will leave the rest of the line unchanged.
+
+You can use this script in the same way as the previous one:
+
+
+
+>> bash cleanup.sh < input.txt > output.txt
+
+
+This will read the input from the file "input.txt" (which should contain the input you provided), run the script to process the input, and then write the output to the file "output.txt".
+
+I hope this helps! Let me know if you have any other questions or if you would like further assistance.
+
+
+
+
+
+
+
