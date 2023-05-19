@@ -1,20 +1,17 @@
 # cleanupdomainnames
 clean up domain names by removing numbers from before the domain tld .
 
-cript that removes only the numbers
-before the first period, rather than all the characters before it:
+gET DIRTY DOMAINS FROM hmmmmm and then use reverseall.sh ( or https://www.textreverse.com/ ) to reverseit use the reverse it script as follows.
 
-This script is similar to the previous one, but it uses the sed 
-command to search for and replace any sequence of digits that occurs before 
-the first period with a period. 
-It then removes any remaining digits after the period in the same way as before.
+for first time use :
+nano dirtydomains.txt
 
-gET DIRTY DOMAINS FROM hmmmmm and then use reverseall.sh ( or https://www.textreverse.com/ ) to reverseit 
+sh reverseall.sh dirtydomains.txt >> input.txt  && bash cleanup.sh < input.txt > output.txt && sh reverse.sh output.txt > cleaned_domains.txt
 
-./reverseall.sh dirtyinput.txt > input.txt
+for repeated use :
 
-bash cleanup.sh < input.txt > output.txt
+rm cleaned_domains.txt dirtydomains.txt input.txt output.txt  && nano dirtydomains.txt
 
+ sh reverseall.sh dirtydomains.txt >> input.txt  && bash cleanup.sh < input.txt > output.txt && sh reverse.sh output.txt > cleaned_domains.txt
 
-./reverseall.sh output.txt > final_domains.txt
 
