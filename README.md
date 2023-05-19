@@ -1,7 +1,7 @@
 # cleanupdomainnames
 clean up domain names by removing numbers from before the domain tld .
 
-MOONBABA SPECIAL SCRIPT IS  script that removes only the numbers
+cript that removes only the numbers
 before the first period, rather than all the characters before it:
 
 This script is similar to the previous one, but it uses the sed 
